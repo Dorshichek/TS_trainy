@@ -1,0 +1,36 @@
+.main {
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__tasks {
+    flex: 1 0 33.333%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: start;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__tasks-empty {
+    text-align: center;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: bolder;
+    color: $black;
+  }
+}
+
+.tasks-list {
+
+}
+
+.tasks-todo {
+
+}
+
+.tasks-complete {
+}

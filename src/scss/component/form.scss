@@ -1,0 +1,61 @@
+.task-generator {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid $black;
+  padding: 10px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  border-radius: 10px;
+
+  input {
+    border: 1px solid $black;
+    border-radius: 10px;
+    padding: 10px;
+    color: $black;
+  }
+
+  input:focus {
+    border: 1px solid $red;
+  }
+
+  textarea::placeholder {
+    color: $grey;
+  }
+
+  textarea:focus {
+    border: 1px solid $red;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__button {
+    padding: 7px;
+    background-color: $red;
+    color: $black;
+    border: 1px solid $black;
+    border-radius: 10px;
+  }
+}
+
+.task-title {
+
+}
+
+.task-text {
+  width: 100%;
+  min-height: 150px;
+  border: 1px solid $black;
+  border-radius: 10px;
+  padding: 10px;
+  resize: none;
+}
+
+.task-priority {
+
+}

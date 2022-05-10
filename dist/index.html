@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="/index.c92073ef.css">
+</head>
+<body>
+<div class="wrapper">
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__box">
+        <h2 class="header__title">Tasks</h2>
+      </div>
+      <div class="header__box">
+        <h2 class="header__title">To DO</h2>
+      </div>
+      <div class="header__box">
+        <h2 class="header__title">Complete</h2>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__container container">
+      <div class="main__tasks tasks-list">
+        <span class="main__tasks-empty">Нет задач</span>
+      </div>
+      <div class="main__tasks tasks-todo">
+        <span class="main__tasks-empty">Нет задач</span>
+      </div>
+      <div class="main__tasks tasks-complete">
+        <span class="main__tasks-empty">Нет задач</span>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__tasks-count">
+        <span class="footer__counter">Список задач: <span class="footer__counter-tasks">0</span></span>
+      </div>
+      <div class="footer__tasks-count">
+        <span class="footer__counter">Текущие задачи: <span class="footer__counter-tasks-todo"></span></span>
+      </div>
+      <div class="footer__tasks-count">
+        <span class="footer__counter">Выполненно задач: <span class="footer__counter-tasks-complete"></span></span>
+      </div>
+    </div>
+  </footer>
+</div>
+<form class="task-generator">
+  <span class="task-generator__title">Создать задачу</span>
+  <label>
+    <input class="task-generator__input task-title" placeholder="Имя задачи" type="text">
+  </label>
+  <label>
+    <textarea class="task-generator__input task-text" placeholder="Описание задачи"></textarea>
+  </label>
+  <label>
+    <input class="task-generator__input task-priority" placeholder="Приоритет 0-5" type="number">
+  </label>
+  <button class="task-generator__button" type="submit">Создать задачу</button>
+</form>
+<template class="task">
+  <span class="task-card__title"><span class="task-card__id"></span></span>
+  <p class="task-card__text"></p>
+  <span class="task-card__priority">Приоритет: <span class="task-card__priority-number"></span></span>
+</template>
+<script src="/index.43d43591.js" defer=""></script>
+<script src="/index.18dbc454.js" defer=""></script>
+</body>
+</html>

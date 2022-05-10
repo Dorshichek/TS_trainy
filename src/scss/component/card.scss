@@ -1,0 +1,86 @@
+.task-card {
+  height: auto;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid $black;
+  cursor: grabbing;
+  background-color: $white-grey;
+  word-break: break-word;
+
+  &__id {
+    font-size: 14px;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: end;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 18px;
+    color: $black;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  &__text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: $black;
+  }
+
+  &__priority {
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+    color: $black;
+    text-align: end;
+    font-weight: bolder;
+  }
+}
+
+.task {
+  .task-card {
+    height: auto;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid $black;
+    cursor: grabbing;
+    background-color: $white-grey;
+
+    &__id {
+      font-size: 14px;
+      font-weight: bolder;
+      font-style: italic;
+      text-align: end;
+    }
+
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+      font-size: 18px;
+      color: $black;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    &__text {
+      margin-top: 10px;
+      font-size: 16px;
+      color: $black;
+    }
+
+    &__priority {
+      display: block;
+      margin-top: 10px;
+      font-size: 15px;
+      color: $black;
+      text-align: end;
+      font-weight: bolder;
+    }
+  }
+}

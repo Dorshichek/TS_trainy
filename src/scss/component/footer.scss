@@ -1,0 +1,30 @@
+.footer {
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__tasks-count {
+    flex: 1 0 33.333%;
+    text-align: start;
+  }
+
+  &__counter {
+    color: $black;
+    font-size: 16px;
+  }
+
+  &__counter-tasks {
+
+  }
+
+  &__counter-tasks-todo {
+  }
+
+  &__counter-tasks-complete {
+  }
+}

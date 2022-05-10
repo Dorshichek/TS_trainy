@@ -1,0 +1,20 @@
+.header {
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__box {
+    flex: 1 0 33.333%;
+    text-align: center;
+  }
+
+  &__title {
+    color: $black;
+    font-size: 22px;
+  }
+}
