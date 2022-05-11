@@ -526,6 +526,7 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"1SICI":[function(require,module,exports) {
+"use strict";
 
 },{}]},["54dwi","1SICI"], "1SICI", "parcelRequirefe7a")
 

@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var elements_1 = require("./elements");
-var task_1 = require("./task");
+const elements_1 = require("./elements");
+const task_1 = require("./task");
 document.addEventListener("DOMContentLoaded", init);
 function init() {
     elements_1.UI_ELEMENTS.TASK_GENERATOR.BUTTON.addEventListener('click', task_1.createTask);

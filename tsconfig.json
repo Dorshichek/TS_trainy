@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "lib": ["es2016", "dom"],
+    "module": "CommonJS",
+//    "outFile": "dist/js/bundle.js",
+//    "outDir": "dist/js",
+    "rootDir": "src/js",
+    "noUnusedLocals": true,
+    "pretty": true,
+    "noEmitOnError": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitThis": false,
+    "noImplicitAny": true,
+    "skipLibCheck": true
+  }
+}

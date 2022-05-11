@@ -530,8 +530,8 @@ function hmrAcceptRun(bundle, id) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-var elements_1 = require("./elements");
-var task_1 = require("./task");
+const elements_1 = require("./elements");
+const task_1 = require("./task");
 document.addEventListener("DOMContentLoaded", init);
 function init() {
     elements_1.UI_ELEMENTS.TASK_GENERATOR.BUTTON.addEventListener('click', task_1.createTask);
@@ -586,15 +586,16 @@ exports.clearEmptyTaskMessage = exports.priorityInputLength = exports.priorityIn
 //
 //
 // }
-var elements_1 = require("./elements");
-function createTask() {
+const elements_1 = require("./elements");
+function createTask(event) {
+    console.log(window.event);
     event.preventDefault();
-    var title = elements_1.UI_ELEMENTS.TASK_GENERATOR.TITLE.value;
-    var text = elements_1.UI_ELEMENTS.TASK_GENERATOR.TEXT.value;
-    var priority = elements_1.UI_ELEMENTS.TASK_GENERATOR.PRIORITY.value;
+    const title = elements_1.UI_ELEMENTS.TASK_GENERATOR.TITLE.value;
+    const text = elements_1.UI_ELEMENTS.TASK_GENERATOR.TEXT.value;
+    const priority = elements_1.UI_ELEMENTS.TASK_GENERATOR.PRIORITY.value;
     if (title && text && priority) {
-        var TEMPLATE = elements_1.UI_ELEMENTS.TEMPLATE;
-        var ELEMENT = document.createElement('div');
+        const TEMPLATE = elements_1.UI_ELEMENTS.TEMPLATE;
+        const ELEMENT = document.createElement('div');
         ELEMENT.classList.add('task-card');
         ELEMENT.append(TEMPLATE.content.cloneNode(true));
         ELEMENT.querySelector('.task-card__title').textContent = title;
@@ -607,14 +608,14 @@ function createTask() {
 }
 exports.createTask = createTask;
 function clearInputs() {
-    var INPUTS = elements_1.UI_ELEMENTS.TASK_GENERATOR.INPUTS;
-    var EMPTYLINE = '';
-    INPUTS.forEach(function(input) {
+    const INPUTS = elements_1.UI_ELEMENTS.TASK_GENERATOR.INPUTS;
+    const EMPTYLINE = '';
+    INPUTS.forEach((input)=>{
         input["value"] = EMPTYLINE;
     });
 }
 function capitalLetter() {
-    var inputValueIsNotEmpty = this.value !== '';
+    const inputValueIsNotEmpty = this.value !== '';
     if (inputValueIsNotEmpty) this.value = this.value[0].toUpperCase() + this.value.slice(1);
 }
 exports.capitalLetter = capitalLetter;
@@ -623,18 +624,19 @@ function priorityInputValue() {
 }
 exports.priorityInputValue = priorityInputValue;
 function priorityInputLength() {
-    var string = this.value;
-    if (string.length > 1) this.value = this.value.slice(1);
+    const string = this.value;
+    const symbol = 1;
+    if (string.length > symbol) this.value = this.value.slice(1);
 }
 exports.priorityInputLength = priorityInputLength;
 function clearEmptyTaskMessage() {
-    var taskMessage = elements_1.UI_ELEMENTS.TASK_EMPTY[0];
-    if (taskMessage) taskMessage.parentNode.removeChild(taskMessage);
+    const emptyTaskMessage = elements_1.UI_ELEMENTS.TASK_EMPTY[0];
+    console.log(elements_1.UI_ELEMENTS.TASK_EMPTY);
+    if (emptyTaskMessage) emptyTaskMessage.parentNode.removeChild(emptyTaskMessage);
 }
 exports.clearEmptyTaskMessage = clearEmptyTaskMessage;
-var counter = elements_1.UI_ELEMENTS.COUNTERS.TASKS.textContent;
+const counter = elements_1.UI_ELEMENTS.COUNTERS.TASKS.textContent;
 console.log(counter);
-function taskCounter() {}
 
 },{"./elements":"d38dq"}]},["1yTpK","l17dj"], "l17dj", "parcelRequirefe7a")
 
